@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node</title>
+</head>
+<body>
+    <div class="container">"this is my container"</div>
+    <script>
+        let jsonObj = {
+            name:"pallavi",
+            channel:"code with pallavi",
+            food:"arua dalma alubaghara",
+            place:"gangtok",
+            color:"red"
+        }
+        console.log(jsonObj);
+        // to print it as a sting we can stringify the object.
+        let myjsonstr = JSON.stringify(jsonObj);
+        console.log(myjsonstr);
+
+        // now if i want to change my clr from red to blue.we can use replace option
+        myjsonstr = myjsonstr.replace("red", "blue");
+        console.log(myjsonstr);
+
+        // to convert it back to an object
+        newjsonobj = JSON.parse(myjsonstr);
+        console.log(newjsonobj);
+
+
+
+    </script>
+</body>
+</html>
